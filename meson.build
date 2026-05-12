@@ -20,6 +20,8 @@ add_project_arguments(
     language: 'C'
 )
 
+g_ir_compiler = find_program('g-ir-compiler', required: false)
+
 subdir('lib')
 subdir('src')
 subdir('test')
